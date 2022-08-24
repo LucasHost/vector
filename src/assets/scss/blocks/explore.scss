@@ -1,0 +1,38 @@
+.explore__title {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.0384rem;
+}
+
+.explore__nav-item {
+    margin-bottom: 0.9rem;
+
+    &--end {
+        margin-bottom: 0;
+    }
+}
+
+.explore__nav-link {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    letter-spacing: 0.18px;
+
+    color: $verylightblue;
+    text-decoration: none;
+
+    transition: color .2s linear;
+
+    &:before {
+        content: "⋯";
+        color: $amber;
+        font-size: 2rem;
+        margin-right: 1.3rem;
+    }
+
+    &:hover {
+        color: $amber;
+    }
+}

@@ -1,0 +1,100 @@
+.about {
+    color: $navyblue;
+    padding: 20rem 0 14rem 0;
+
+    @include breakpoint ($notebook-bp) {
+        padding: 5rem 0 0 0;
+    }
+}
+
+.about__inner {
+    display: flex;
+
+    @include breakpoint ($notebook-bp) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about__left {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    
+    .about__img {
+        width: fit-content;
+        border: 10px solid $amber;
+
+        img {
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            position: relative;
+            top: -5rem;
+            left: -5rem;
+        }
+    }
+
+    @include breakpoint ($notebook-bp) {
+        display: none;
+    }
+}
+
+.about__right {
+    margin-left: 20rem;
+
+    @include breakpoint ($notebook-bp) {
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.about__title {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 5rem;
+
+    display: flex;
+    flex-direction: column;
+
+    &:after {
+        content: "";
+        width: 5rem;
+        height: 0.3rem;
+        display: inline-block;
+        background-color: #FFCA42;
+        margin-top: 2.3rem;
+        margin-bottom: 3.3rem;
+    }
+
+    @include breakpoint ($notebook-bp) {
+        align-items: center;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 3.3rem;
+    }
+}
+
+.about__text {
+    width: 55rem;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 3.4rem;
+    color: #969AA0;
+
+    @include breakpoint ($notebook-bp) {
+        width: 61rem;
+        margin-bottom: 2rem;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        width: 80%;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+}

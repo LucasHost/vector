@@ -1,0 +1,102 @@
+.comments__com {
+    display: flex;
+    align-items: center;
+
+    @include breakpoint ($tablet_s-bp) {
+        flex-direction: column;
+    }
+
+    @include breakpoint ($notebook_sl-bp) {
+        margin-top: 2rem;
+    }
+}
+
+.comments_com_o {
+
+    @include breakpoint ($notebook-bp) {
+        display: flex;
+    }
+
+    @include breakpoint ($notebook_sl-bp) {
+        display: block;
+    }
+}
+
+.comment {
+    width: 38.1rem;
+    height: 29.2rem;
+
+    background-color: $navyblue;
+    color: $white;
+
+    padding: 3rem 4.3rem 2.4rem 3.5rem;
+    margin: 2rem 1rem;
+
+    @include breakpoint ($notebook-bp) {
+        
+        &--tab {
+            margin: 0 1rem;
+        }
+    }
+
+    @include breakpoint ($mobile-bp) {
+        width: 94%;
+        height: 100%;
+    }
+}
+
+.com__user {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 2rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        img {
+            height: 6rem;
+
+            margin-right: 1.5rem;
+        }
+    }
+}
+
+.com__name {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 1.8rem;
+    }
+}
+
+.com__title {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1.3rem;
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+
+        margin-top: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+}
+.com__text {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    color: $verylightblue;
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+}

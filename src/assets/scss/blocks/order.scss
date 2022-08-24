@@ -1,0 +1,51 @@
+.order {
+    display: flex;
+    align-items: center;
+    
+    margin-left: 5.1rem;
+
+    @include breakpoint ($notebook_m-bp) {
+        display: flex;
+
+        &--header {
+            display: none;
+        }
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin-left: 0;
+        flex-direction: column;
+    }
+}
+
+.order__item {
+    position: relative;
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin-bottom: 2rem;
+    }
+}
+
+.order__link {
+    text-decoration: none;
+
+    font-family: 'Cardo', serif;
+    color: $navyblue;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    white-space: nowrap;
+    background-color: $amber;
+    
+    padding: 1.8rem 5.2rem;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: $white;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        padding: 1.5rem 3rem;
+    }
+}

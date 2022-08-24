@@ -1,0 +1,68 @@
+.trusted__sections {
+    display: flex;
+
+    @include breakpoint ($notebook_l-bp) {
+        flex-direction: column;
+    }
+}
+
+.ts {
+    display: flex;
+
+    @include breakpoint ($notebook_l-bp) {
+
+        &--st {
+            margin-top: 3rem;
+
+            @include breakpoint ($tablet_mini-bp) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.trusted__section {
+    width: 26.7rem;
+    margin-right: 4rem;
+
+    &--end {
+        margin-right: 0;
+    }
+
+    @include breakpoint ($notebook_l-bp) {
+        &--nend {
+            margin-right: 0;
+        }
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+
+        width: 70%;
+    }
+}
+
+.trusted__section-title {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    margin: 1.9rem 0;
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin: 0.3rem 0;
+    }
+}
+
+.trusted__section-subtitle {
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    color: #969AA0;
+}

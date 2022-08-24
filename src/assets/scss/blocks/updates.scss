@@ -1,0 +1,176 @@
+.updates {
+    background: $white;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 12rem 0;
+
+    @include breakpoint ($notebook-bp) {
+        padding: 5rem 0;
+    }
+}
+
+.updates__inner {
+    text-align: center;
+
+    background: $amber;
+    width: 130rem;
+    height: 48.9rem;
+
+    color: $navyblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint ($notebook-bp) {
+        width: 90%;
+    }
+
+    @include breakpoint ($notebook_l-bp) {
+        width: 90%;
+    }
+}
+
+.updates__title {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 5rem;
+    text-transform: capitalize;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:after {
+        content: "";
+        width: 5rem;
+        height: 0.3rem;
+        display: inline-block;
+        background-color: $navyblue;
+        margin-top: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    @include breakpoint ($tablet-bp) {
+        font-size: 3.2rem;
+    }
+}
+
+.updates__subtitle {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+
+    @include breakpoint ($tablet-bp) {
+        font-size: 1.4rem;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        padding: 0 1rem;
+    }
+}
+
+.updates__form {
+    margin-top: 4.9rem;
+
+    @include breakpoint ($notebook_l-bp) {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        flex-direction: column;
+    }
+}
+
+.updates__email {
+    width: 65.6rem;
+    height: 7rem;
+
+    padding: 0 3.9rem;
+
+    border: none;
+
+    color: $navyblue;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+    letter-spacing: 0.018rem;
+
+    &::placeholder {color: $verylightblue;}
+
+    @include breakpoint ($notebook-bp) {
+        width: 45.6rem;
+    }
+
+    @include breakpoint ($notebook_l-bp) {
+        width: 60%;
+    }
+
+    @include breakpoint ($tablet-bp) {
+        font-size: 1.4rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        margin-bottom: 1rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        width: 70%;
+    }
+}
+
+.updates__send {
+    width: 32.8rem;
+    height: 7rem;
+
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+    text-align: center;
+    letter-spacing: 0.018rem;
+
+    background-color: $navyblue;
+    border: 2px solid $navyblue;
+    border-radius: 0px;
+
+    color: $white;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+    letter-spacing: 0.018rem;
+
+    transition: border .2s linear;
+
+    &:hover {
+        color: $navyblue;
+        background-color: $white;
+    }
+
+    &:active {
+        border: 2px solid $white;
+    }
+
+    @include breakpoint ($notebook-bp) {
+        width: 18.8rem;
+    }
+
+    @include breakpoint ($notebook_l-bp) {
+        width: 20%;
+    }
+
+    @include breakpoint ($tablet-bp) {
+        font-size: 1.4rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        width: 40%;
+    }
+}

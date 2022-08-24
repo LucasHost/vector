@@ -1,0 +1,20 @@
+.basket {
+    display: flex;
+    align-items: center;
+    margin-left: 1.55rem;
+
+    &--burger {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+}
+
+.basket-icon {
+    fill: $black;
+
+    transition: fill .2s linear;
+
+    &:hover {
+        fill: $white;
+    }
+}

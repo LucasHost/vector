@@ -1,0 +1,78 @@
+.connection__title {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.0384rem;
+}
+
+.connection__inner {
+    display: flex;
+}
+
+.connection__texts {
+    margin-right: 2.8rem;
+
+    @include breakpoint ($mobile-bp) {
+        margin-right: 1rem;
+    }
+}
+
+.connection__text {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.036rem;
+
+    &--ad2 {
+        margin-bottom: 5.5rem;
+        white-space: nowrap;
+    }
+
+    &--mail2 {
+        margin-bottom: 2.8rem;
+    }
+}
+
+.connection__links {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint ($mobile-bp) {
+        width: 70%;
+    }
+}
+
+.connection__link {
+    text-decoration: none;
+    color: $verylightblue;
+
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+
+    transition: color .2s linear;
+
+    &--ad {
+        width: 24.4rem;
+        margin-bottom: 2.8rem;
+    }
+
+    &--mail {
+        margin-bottom: 2.8rem;
+    }
+
+    &:hover {
+        color: $amber;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 1.5rem;
+        
+        &--ad {
+            width: 100%;
+        }
+    }
+}

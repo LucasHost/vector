@@ -1,0 +1,73 @@
+.about__sections {
+    display: flex;
+}
+
+.section__title {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 5.4rem;
+    line-height: 7.7rem;
+
+    @include breakpoint ($tablet_mini-bp) {
+        font-size: 3rem;
+    }
+}
+
+.section__subtitle {
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    color: #969AA0;
+}
+
+.about__section {
+    margin-right: 3.7rem;
+    margin-left: 3.7rem;
+
+    &:after {
+        content: "";
+        width: 0.1rem;
+        height: 9.8rem;
+        display: inline-block;
+
+        background-color: $amber;
+
+        position: relative;
+        top: -10.2rem;
+        left: -3.7rem;
+
+        margin-right: 1.4rem;
+
+        @include breakpoint ($notebook-bp) {
+            left: -9.3rem;
+        }
+
+        @include breakpoint ($tablet_mini-bp) {
+            left: -6.5rem;
+        }
+
+        @include breakpoint ($mobile-bp) {
+            left: -4.5rem;
+        }
+    }
+
+    &--r {
+        margin-left: 0;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    @include breakpoint ($notebook-bp) {
+        
+        &--r {
+            margin-left: 3.7rem;
+        }
+    }
+
+    @include breakpoint ($mobile-bp) {
+        margin-right: 0.7rem;
+        margin-left: 0.7rem;
+    }
+}

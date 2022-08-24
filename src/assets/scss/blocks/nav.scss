@@ -1,0 +1,39 @@
+.nav {
+    display: flex;
+
+    margin-left: 23.65rem;
+
+    @include breakpoint ($notebook-bp) {
+        margin-left: 11.825rem;
+    }
+    
+    @include breakpoint ($notebook_m-bp) {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item {
+    margin: 0 2.35rem;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: $floralwhite;
+    font-style: normal;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    white-space: nowrap;
+    letter-spacing: 0.017rem;
+
+    transition: color .2s linear;
+
+    &:hover {
+        color: $amber;
+    }
+}

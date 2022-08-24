@@ -1,0 +1,259 @@
+.intro {
+    width: 100%;
+    height: 99.1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $navyblue;
+
+    @include breakpoint ($notebook_m-bp) {
+        align-items: flex-start;
+        height: 74.9rem;
+    }
+
+    @include breakpoint ($notebook_l-bp) {
+        align-items: flex-start;
+        height: 69.1rem;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        height: 100%;
+    }
+}
+
+.intro__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint ($notebook_m-bp) {
+        margin-top: 5rem;
+    }
+
+    @include breakpoint ($notebook_l-bp) {
+        margin-top: 0;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        padding: 3rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        padding: 3rem 1rem;
+    }
+}
+
+.intro__left {
+    margin-right: 10rem;
+
+    @include breakpoint ($notebook_m-bp) {
+        margin-top: 7rem;
+    }
+
+    @include breakpoint ($notebook_l-bp) {
+        margin-right: 0;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin-top: 0;
+    }
+}
+
+.intro__right {
+
+    img {
+        @include breakpoint ($notebook_m-bp) {
+            height: 60rem;
+        }
+    }
+
+    @include breakpoint ($notebook_l-bp) {
+        display: none;
+    }
+}
+
+.intro__suptitle,
+.intro__title,
+.intro__links,
+.intro__list-title {
+    font-family: 'Cardo';
+    font-weight: 400;
+}
+
+.intro__suptitle {
+    font-size: 2.1rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.12rem;
+
+    &:before {
+        content: "";
+        width: 3.5rem;
+        height: 0.2rem;
+        display: inline-block;
+
+        background-color: $amber;
+
+        position: relative;
+        top: -0.7rem;
+
+        margin-right: 1.4rem;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        font-size: 1.8rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 1.6rem;
+    }
+}
+
+.intro__title {
+    font-size: 6.4rem;
+    line-height: 7.8rem;
+    letter-spacing: 0.13rem;
+
+    @include breakpoint ($tablet_mini-bp) {
+        font-size: 4.4rem;
+        line-height: 4.8rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 3.3rem;
+        line-height: 3.8rem;
+    }
+}
+
+.intro__text {
+    color: $verylightblue;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+
+    margin-top: 2.4rem;
+
+    @include breakpoint ($tablet_mini-bp) {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        margin-top: 1rem;
+    }
+}
+
+.intro__links {
+    margin-top: 6rem;
+    margin-bottom: 6.5rem;
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin-top: 4rem;
+        margin-bottom: 2.5rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        margin-top: 3.5rem;
+        margin-bottom: 1.3rem;
+    }
+}
+
+.intro__demo {
+    color: $white;
+    font-size: 1.9rem;
+    line-height: 3rem;
+    letter-spacing: 0.38px;
+    text-transform: capitalize;
+    text-decoration: none;
+
+    border-bottom: 1px $white solid;
+
+    margin-left: 5.1rem;
+
+    transition: color .2s linear;
+
+    &:hover {
+        border-bottom: 1px $amber solid;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin-left: 0;
+    }
+}
+
+.intro__list {
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin-left: 2.5rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        margin-left: 1.4em;
+    }
+}
+
+.intro__list-content {
+    margin-right: 7rem;
+
+    &--end {
+        margin-right: 0;
+    }
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+
+        background: $amber;
+
+        border-radius: 50%;
+
+        position: relative;
+        left: -2.5rem;
+        bottom: -2.7rem;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin-right: 5rem;
+
+        &--end {
+            margin-right: 0;
+        }
+    }
+
+    @include breakpoint ($mobile-bp) {
+        margin-right: 3rem;
+
+        &:before {
+            width: 1rem;
+            height: 1rem;
+
+            left: -1.4rem;
+            bottom: -2.3rem;
+        }
+    }
+}
+
+.intro__list-title {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.48px;
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 2rem;
+    }
+}
+
+.intro__list-text {
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+    color: $verylightblue;
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+    }
+}

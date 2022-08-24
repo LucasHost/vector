@@ -1,0 +1,105 @@
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+
+    @include breakpoint ($notebook-bp) {
+        width: 100%;
+    }
+
+    @include breakpoint ($tablet-bp) {
+        margin-top: 4rem;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        flex-direction: column;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        margin-top: 2rem;
+    }
+}
+
+.post__right {
+    width: 27%;
+
+    @include breakpoint ($tablet_mini-bp) {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.post__title,
+.post__tag,
+.post__link {
+    font-family: 'Cardo';
+}
+
+.post__img {
+    margin: 1.5rem 3rem;
+
+    box-shadow: 0 0 11px rgba(0, 0, 0, .20);
+
+    @include breakpoint ($notebook-bp) {
+        margin: 1.5rem 5rem;
+    }
+
+    @include breakpoint ($tablet-bp) {
+        height: 30rem;
+        margin: 3.5rem 2.1rem;
+    }
+}
+
+.post__title {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    font-weight: 400;
+   
+    white-space: nowrap;
+}
+.post__price {
+    font-size: 2.1rem;
+    line-height: 3.3rem;
+    color: $amber;
+    font-weight: 400;
+}
+
+.post__text {
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    color: #969AA0;
+    font-weight: 400;
+}
+
+.post__link {
+    text-decoration: none;
+    color: $navyblue;
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    white-space: nowrap;
+
+    letter-spacing: 0.038rem;
+
+    border: 2px solid $amber;
+
+    padding: 1.8rem 5.2rem;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: $amber;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        padding: 1rem 2rem;
+    }
+}
+
+.post__text {
+    white-space: pre-wrap;
+}
+

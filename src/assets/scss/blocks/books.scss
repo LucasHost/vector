@@ -1,0 +1,58 @@
+.books {
+    color: #1B3764;
+    background: $white;
+    padding: 12rem 0 15rem 0;
+
+    @include breakpoint ($notebook-bp) {
+        padding: 5rem 0 5rem 0;
+    }
+}
+
+.books__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.books__title {
+    text-align: center;
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 5rem;
+    text-transform: capitalize;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:after {
+        content: "";
+        width: 5rem;
+        height: 0.3rem;
+        display: inline-block;
+
+        background-color: $amber;
+
+        margin-top: 2.3rem;
+        margin-bottom: 7rem;
+
+        @include breakpoint ($tablet-bp) {
+
+            margin-bottom: 0;
+        }
+    }
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 3.3rem;
+    }
+}
+
+.books__post {
+    display: flex;
+    justify-content: center;
+    
+    @include breakpoint ($notebook_m-bp) {
+        flex-direction: column;
+    }
+}

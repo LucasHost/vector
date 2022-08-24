@@ -1,0 +1,207 @@
+.enhance {
+    color: $navyblue;
+    background: $floralwhite;
+    
+    padding: 12rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint ($notebook-bp) {
+        padding: 5rem 0;
+    }
+}
+
+.enhance__title {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 5rem;
+    text-align: center;
+    text-transform: capitalize;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:after {
+        content: "";
+        width: 5rem;
+        height: 0.3rem;
+        display: inline-block;
+        background-color: #FFCA42;
+        margin-top: 2.3rem;
+        margin-bottom: 7rem;
+    }
+
+    @include breakpoint ($notebook_l-bp) {
+        &:after {
+            margin-bottom: 3rem;
+        }
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        font-size: 4rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        font-size: 3.3rem;
+    }
+}
+
+.enhance__inner {
+    display: flex;
+
+    @include breakpoint ($notebook_sl-bp) {
+        display: block;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.enhance__content {
+    width: 53rem;
+    margin-right: 13.5rem;
+
+    &--end {
+        margin-right: 0;
+    }
+
+    @include breakpoint ($notebook_m-bp) {
+        margin-right: 2rem;
+    }
+
+    @include breakpoint ($notebook_sl-bp) {
+        margin-right: 0rem;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        width: 90%;
+    }
+}
+
+.enhance__cont {
+    margin-bottom: 12.6rem;
+    padding: 4rem;
+
+    background-color: $white;
+
+    &--end {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint ($notebook_sl-bp) {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin-bottom: 1rem;
+        
+        padding: 2rem;
+    }
+}
+
+.enhance__cont-title {
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+}
+
+.enhance__cont-text {
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    color: #969AA0;
+}
+
+.enhance__tags {
+    display: flex;
+
+    @include breakpoint ($tablet_mini-bp) {
+        flex-direction: column;
+    }
+}
+
+.enhance__tag {
+    display: flex;
+    align-items: center;
+    margin-right: 4.5rem;
+
+    &--end {
+        margin-right: 0;
+    }
+}
+
+.enhance__footer {
+    text-align: center;
+
+    margin-top: 13.8rem;
+
+    @include breakpoint ($notebook-l-bp) {
+        margin-top: 8.8rem;
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        margin-top: 3.8rem;
+    }
+}
+
+.enhance__link {
+    background-color: $amber;
+    text-decoration: none;
+
+    color: $navyblue;
+    font-family: 'Cardo';
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.057rem;
+    text-transform: capitalize;
+
+    padding: 2.4rem 9.2rem;
+
+    margin-bottom: 2rem;
+
+    &:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, .30);
+    }
+
+    @include breakpoint ($tablet_mini-bp) {
+        padding: 2rem 5.2rem;
+    }
+
+    @include breakpoint ($mobile-bp) {
+        padding: 1.3rem 1.6rem;
+    }
+}
+
+.enhance__footer-text {
+    margin: 4.4rem 1rem 0 1rem;
+    
+
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+
+    color: #969AA0;
+
+    &--end {
+        margin-top: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: $navyblue;
+        
+        &:hover {
+            border-bottom: 1px $navyblue solid;
+        }
+    }
+}
