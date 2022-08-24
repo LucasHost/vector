@@ -1,0 +1,59 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #F5F5F5;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $white;
+    margin: 0;
+
+    &.show-nav {
+        overflow: hidden;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/burger";
+@import "blocks/social";
+@import "blocks/basket";
+@import "blocks/order";
+@import "blocks/intro";
+@import "blocks/books";
+@import "blocks/post";
+@import "blocks/about";
+@import "blocks/about-section";
+@import "blocks/about-contact";
+@import "blocks/trusted";
+@import "blocks/trusted-section";
+@import "blocks/getbook";
+@import "blocks/learn";
+@import "blocks/tag";
+@import "blocks/enhance";
+@import "blocks/rating";
+@import "blocks/comments";
+@import "blocks/comments-com";
+@import "blocks/comments-rating";
+@import "blocks/article";
+@import "blocks/updates";
+@import "blocks/footer";
+@import "blocks/explore";
+@import "blocks/utility";
+@import "blocks/connection";
